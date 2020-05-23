@@ -1,0 +1,62 @@
+﻿<Window x:Class="test.AddClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="Add Client" Height="320" Width="500">
+    <Grid Background="CornflowerBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="120"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="240"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Height="20" Margin="8 5">Name</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Surname</TextBlock>
+            <TextBlock  Height="20" Margin="8 5">Patronomic</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Birthdate</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Address</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Passport Series</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Passport Number</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Birthplace</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Height="20" Margin="0 5" Name="name"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="surname"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="patronomic"></TextBox>
+            <DatePicker Height="24" Margin="0 3" Name="birthdate"></DatePicker>
+            <TextBox Height="20" Margin="0 5" Name="address"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="pseries"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="pnum"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="birthplace"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <TextBlock Height="20" Margin="8 5">Email</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Phone</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Gender</TextBlock>
+            <TextBlock Height="20" Margin="8 5">License Number</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Date of first issue</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Date of issue</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Date of end</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Issue Place</TextBlock>
+        </StackPanel>
+        <Button Height="20" Width="100" Grid.ColumnSpan="4" Grid.Row="1" Click="Button_Click">Add</Button>
+        <StackPanel Grid.Column="3">
+            <TextBox Height="20" Margin="0 5" Name="email"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="phone"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="gender"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="lnum"></TextBox>
+            <DatePicker Height="24" Margin="0 3" Name="fis"></DatePicker>
+            <DatePicker Height="24" Margin="0 3" Name="sis"></DatePicker>
+            <DatePicker Height="24" Margin="0 3" Name="eis"></DatePicker>
+            <TextBox Height="20" Margin="0 5" Name="ip"></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

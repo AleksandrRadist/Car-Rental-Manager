@@ -1,0 +1,61 @@
+﻿<Window x:Class="test.AddOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="Add Order" Height="290" Width="490">
+    <Grid Background="CornflowerBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="120"/>
+            <ColumnDefinition Width="120"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="210"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBlock Height="20" Margin="8 5">Client Id</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Start Station Id</TextBlock>
+            <TextBlock  Height="20" Margin="8 5">End Station Id</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Tariff Id</TextBlock>
+            
+            <TextBlock Height="20" Margin="8 5">Car Id</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Comments</TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Height="20" Margin="0 5" Name="client"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="station1"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="station2"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="tariff"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="car"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="com"></TextBox>
+            <Button Height="20" Margin="0 5" Click="Button_Click_1" Width="100">Calculate Cost</Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2">
+            <TextBlock Height="20" Margin="8 5">Start Date</TextBlock>
+            <TextBlock Height="20" Margin="8 5">End Date</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Employee Id</TextBlock>
+            <TextBlock Height="20" Margin="8 5">Payment Date</TextBlock>
+
+            <TextBlock Height="20" Margin="8 5">Child Seat</TextBlock>
+            <TextBlock Height="20" Margin="8 5">GPS Nabigator</TextBlock>
+
+            <TextBlock Height="20" Margin="0 5" Name="cost" Background="LightGray"></TextBlock>
+
+        </StackPanel>
+        <Button Height="20" Width="100" Grid.ColumnSpan="4" Grid.Row="1" Click="Button_Click">Add</Button>
+        <StackPanel Grid.Column="3">
+            <TextBox Height="20" Margin="0 5" Name="date1"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="date2"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="employee"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="paydate"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="child"></TextBox>
+            <TextBox Height="20" Margin="0 5" Name="gps"></TextBox>
+            
+        </StackPanel>
+    </Grid>
+</Window>
